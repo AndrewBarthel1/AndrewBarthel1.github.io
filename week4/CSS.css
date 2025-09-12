@@ -1,0 +1,251 @@
+
+
+.gravitas-one-regular {
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .epunda-slab {
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+  }
+
+
+  
+
+  button .About {
+    display: none;
+  }
+  
+  button:hover .A {
+    display: none;
+  }
+  
+  button:hover .About {
+    display: inline;
+  }
+  
+  button .Need {
+    display: none;
+  }
+  
+  button:hover .N {
+    display: none;
+  }
+  
+  button:hover .Need {
+    display: inline;
+  }
+  
+  button .Dreams {
+    display: none;
+  }
+  
+  button:hover .D {
+    display: none;
+  }
+  
+  button:hover .Dreams {
+    display: inline;
+  }
+  
+  button .Read {
+    display: none;
+  }
+  
+  button:hover .R {
+    display: none;
+  }
+  
+  button:hover .Read {
+    display: inline;
+  }
+  
+  button .Every {
+    display: none;
+  }
+  
+  button:hover .E {
+    display: none;
+  }
+  
+  button:hover .Every {
+    display: inline;
+  }
+  
+  button .What {
+    display: none;
+  }
+  
+  button:hover .W {
+    display: none;
+  }
+  
+  button:hover .What {
+    display: inline;
+  }
+
+  button .Home {
+    display: none;
+  }
+  
+  button:hover .ex {
+    display: none;
+  }
+  
+  button:hover .Home {
+    display: inline;
+  }
+  
+  body{
+    background-color: #F8F4E3;
+  }
+
+  
+  p{
+      font-family: "Epunda Slab", serif;
+      font-size: 16px;
+      color:#391463;
+      background-color:#3ca8aa33;
+      border-color:#2D5E7A;
+      border-radius: 20px;
+      padding: 10px;
+  }
+
+  hr{border: 1px solid #391463;}
+  
+  .small_text {
+      font-family: "Epunda Slab", serif;
+      font-size:12px;
+  }
+  
+  #small{
+    font-family: "Gravitas One", serif;
+      font-size: 20px;
+      color:#391463;
+      text-align: center;
+      background-color: none;
+      padding:none;
+      border-radius: none;
+  }
+  #big{
+    font-family: "Gravitas One", serif;
+      font-size: 30px;
+      color:#391463;
+      text-align: center;
+      background-color: none;
+      padding:none;
+      border-radius: none;
+  }
+
+.inline{
+    display:inline;
+}
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .centerb {
+    margin: auto;
+    width: 50%;
+    padding-left:28%;
+  }
+
+  .button1{
+    background-color: #2D5E7A;
+    border: #391463;
+  }
+
+  h1{
+      font-family: "Gravitas One", serif;
+      font-size: 30px;
+      color:#C04735;
+      text-align: center;
+  }
+  
+  h2{
+      font-family: "Gravitas One", serif;
+      font-size: 24px;
+      color:#C04735;
+  }
+  
+  h3{
+      font-family: "Gravitas One", serif;
+      font-size: 20px;
+      color:#C04735;
+  }
+  
+  a{
+      text-decoration: none;
+      color: #C04735;
+      background-color: #2d5e7a48;
+      padding:10px;
+      border-radius: 10px;
+  }
+  
+  a:hover{
+      text-decoration: underline;
+      color: #3CA8AA;
+      background-color: #39146348;
+      padding:10px;
+      border-radius: 10px;
+  }
+  
+  a:visited{
+      text-decoration: none;
+      color: #391463;
+      background-color: #2d5e7a9c;
+      padding:10px;
+      border-radius: 10px;
+  }
+
+  #lbig a{
+    font-family: "Gravitas One", serif;
+      font-size: 20px;
+      color:#391463;
+      text-align: center;
+      background-color: #39146300;;
+      padding:none;
+      border-radius: none;
+      text-decoration: none;
+  }
+
+  #lsmall a{
+    font-family: "Gravitas One", serif;
+      font-size: 15px;
+      color:#391463;
+      text-align: center;
+      background-color: #39146300;;
+      padding:none;
+      border-radius: none;
+      text-decoration: none;
+  }
+
+  #nocenter{
+    text-align: left;
+    font-size: 20px;
+  }
+  
+
+  
+  #grey{
+      background-color: #F8F4E3;
+  }
+  #purple{
+      background-color: #391463;
+  }
+  #teal{
+      background-color: #2D5E7A;
+  }
+  #blue{
+      background-color: #3CA8AA;
+  }
+  #red{
+      background-color: #C04735;
+  }
