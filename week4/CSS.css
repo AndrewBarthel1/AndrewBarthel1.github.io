@@ -123,7 +123,7 @@
       font-size:12px;
   }
   
-  #small{
+.small{
     font-family: "Gravitas One", serif;
       font-size: 20px;
       color:#391463;
@@ -132,7 +132,7 @@
       padding:none;
       border-radius: none;
   }
-  #big{
+  .big{
     font-family: "Gravitas One", serif;
       font-size: 30px;
       color:#391463;
@@ -205,7 +205,7 @@
       border-radius: 10px;
   }
 
-  #lbig a{
+  .lbig{
     font-family: "Gravitas One", serif;
       font-size: 20px;
       color:#391463;
@@ -216,7 +216,7 @@
       text-decoration: none;
   }
 
-  #lsmall a{
+  .lsmall a{
     font-family: "Gravitas One", serif;
       font-size: 15px;
       color:#391463;
