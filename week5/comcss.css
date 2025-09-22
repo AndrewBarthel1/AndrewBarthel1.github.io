@@ -1,0 +1,144 @@
+/* colors:
+#899D03, #FCB829, #875D4A, #FE7126, #F04D32
+*/
+
+.main-nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: #fcb929b7;
+    height:50px;
+}
+
+
+.asimovian-regular {
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-brand{
+font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: #875D4A;
+  align-content: center;
+  padding: 0.25rem;
+  border:#875D4A;
+  border-width: 0.1rem;
+/*  text-decoration-line: underline;
+  text-decoration-style: wavy; */
+}
+.nav-menu{
+    display:flex;
+    gap:2rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #875D4A;
+    text-decoration: none;
+    margin-right:1rem;
+}
+a{
+    text-decoration: none;
+    color: #875D4A;
+}
+
+a:hover{
+    text-decoration: none;
+    color:#644638;
+}
+
+.nav-toggle{
+    display:none;
+}
+
+ul{
+    margin-block-start: 1rem;
+}
+
+button{
+    background-color: transparent;
+    border:none;
+    box-shadow:none;
+    outline: none;
+}
+
+li{
+    margin-bottom:0.9rem;
+}
+
+hr{
+    display:flex;
+    align-self: center;
+    width:100%;
+    border:0.1rem solid #875D4A;
+    margin-block-start:0rem;
+    margin-block-end:0rem;
+}
+
+.nav-menu.hide{
+display: none;
+}
+
+.nav-menu.show{
+display: block;
+ background-color: #fcb929b7;
+    height:220px;
+    width:100px;
+    margin-block-start: 0rem;
+    margin-right:0rem;
+}
+
+ ul li h2{
+    margin-top:0.6rem;
+}
+
+ul{
+    list-style-type:none;
+}
+
+body{
+    margin:0rem;
+}
+@media screen and (max-width: 768px){
+    .nav-toggle{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self:center;
+        flex-direction:column
+    }
+
+    .nav-menu{
+    display:none;
+}
+
+    .hamburger
+    {
+        background-color: #875D4A;;
+        height:3px;
+        width:40px;
+        padding:0;
+        margin:3px;
+        border-radius:3px;
+    }
+
+    .nav-toggle:hover{
+        .hamburger
+    {
+        background-color: #875D4A;;
+        height:4px;
+        width:40px;
+        padding:0;
+        margin:3px;
+        border-radius:4px;
+    }
+    }
+}
