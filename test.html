@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Row Dimensions</title>
+  <style>
+    /* Define the grid container */
+    .grid-container {
+      display: grid;
+      grid-template-rows: 100px 200px 50px; /* Set heights for each row */
+      grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+      gap: 10px; /* Add spacing between rows and columns */
+      border: 2px solid black;
+    }
+
+    /* Style grid items */
+    .grid-item {
+      background-color: lightblue;
+      border: 1px solid darkblue;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    /* Change the height of a specific row dynamically */
+    .grid-container .row-2 {
+      grid-row: 2; /* Target the second row */
+      height: 300px; /* Override height if needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Row 1, Col 1</div>
+    <div class="grid-item">Row 1, Col 2</div>
+    <div class="grid-item row-2">Row 2, Col 1</div>
+    <div class="grid-item">Row 2, Col 2</div>
+    <div class="grid-item">Row 3, Col 1</div>
+    <div class="grid-item">Row 3, Col 2</div>
+  </div>
+</body>
+</html>
