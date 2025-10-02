@@ -23,18 +23,17 @@ function filterPhotos(category) {
 // Save user's theme choice
 
 let btn = document.querySelector('.theme').addEventListener('click', theme);
+let inTheme = 'light'
 
 function theme()
 {
-  setTheme("light");
-}
-function setTheme(theme) {
-  let inTheme = 'light'
   if(inTheme=='dark'){
     theme = 'light'
+    inTheme = 'light'
   }
   else{
     theme = 'dark'
+    inTheme = 'dark'
   }
     localStorage.setItem('userTheme', theme);
     document.body.className = theme;

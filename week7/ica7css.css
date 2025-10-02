@@ -19,5 +19,5 @@ grid-template-areas:
 .gallery-sidebar{grid-area:sidebar;}
 .gallery-nav{grid-area:nav; grid-row:span 4;}
 .theme{grid-area:theme;}
-.light{background-color:beige}
-.dark{background-color: black;}
+.light{background-color:beige; color:black;}
+.dark{background-color: black; color:white}
