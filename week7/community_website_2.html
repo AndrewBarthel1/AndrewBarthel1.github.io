@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Gravitas+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="comcss.css">
+    <script src="comcode.js" defer></script>
+</head>
+<body>
+    <div class="header-container">
+    <nav class="main-nav">
+  <div class="nav-brand">2 Wheels at 14k</div>
+  <button class="nav-toggle" aria-label="Toggle navigation menu">
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+  </button>
+  <ul class="nav-menu hide">
+    <li class="list"><h2 class="menu">Menu</h2></li>
+    <li class="list" id = "small-selected"><a href="community_website_2.html">Home</a></li>
+    <li class="list"><a href="#resources">Resources</a></li>
+    <li class="list"><a href="events.html">Events</a></li>
+    <li class="list"><a href="my-data.html">My Data</a></li>
+  </ul>
+
+  <ul class="nav-menu">
+    <li id = "selected"><a href="community_website_2.html">Home</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="my-data.html">My Data</a></li>
+  </ul>
+      </nav>
+    </div>
+
+    <main class="grid-system">
+      <nav class = "trailhead-filter"> 
+        <h2 class="trailhead-filter-text">
+          Filter: None
+        </h2>
+        <ul class = "trailhead-filter-list hidden">
+          <li class = "filter-item">Front</li>
+          <li class = "filter-item">Sawatch</li>
+          <li class = "filter-item">Mosquito</li>
+          <li class = "filter-item">Sangre de Cristo</li>
+          <li class = "filter-item">San Juan</li>
+          <li class = "filter-item">Elks</li>
+          <li class = "filter-item">None</li>
+          <li class = "filter-item">Saved</li>
+        </ul>
+      </nav>
+        <h1 class="trialhead-header">Trailheads</h1>
+            <span class="trailhead-containers" data-href="#4th" data-catagory="Front">
+                <h3>Fourth of July Trailhead</h3>
+                <span class = "save-me" data-href="#4th"><img src = "bookmark.png" width = 20px></span>
+                  <div class="diff-rating" data-stars="2" data-color="green">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+            </span>
+            <span class="trailhead-containers" data-href="#gg" data-catagory="Front">
+                <h3>Grizzly Gultch</h3>
+                <span class = "save-me" data-href="#gg"><img src = "bookmark.png" width = 20px></span>
+                <div class="diff-rating" data-stars="4" data-color="red">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+            </span>
+            <span class="trailhead-containers" data-href="#hm" data-catagory="Sawatch">
+                <h3>Half Moon</h3>
+                <span class = "save-me" data-href="#hm"><img src = "bookmark.png" width = 20px></span>
+                <div class="diff-rating" data-stars="1" data-color="blue">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+            </span>
+             <span class="trailhead-containers" data-href="#sms" data-catagory="Elks">
+                <h3>Snowmass Creek</h3>
+                <span class = "save-me" data-href="#sms"><img src = "bookmark.png" width = 20px></span>
+                <div class="diff-rating" data-stars="1" data-color="blue">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+            </span>
+            <span class="trailhead-containers" data-href="#mrl" data-catagory="Elks">
+                <h3>Maroon Lake</h3>
+                <span class = "save-me" data-href="#mrl"><img src = "bookmark.png" width = 20px></span>
+                <div class="diff-rating" data-stars="1" data-color="blue">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+            </span>
+            <span class="trailhead-containers" data-href="#ybb" data-catagory="San Juan">
+                <h3>Yankee Boy Basin</h3>
+                <span class = "save-me" data-href="#ybb"><img src = "bookmark.png" width = 20px></span>
+                <div class="diff-rating" data-stars="2" data-color="green">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+            </span>
+            <span class="trailhead-containers" data-href="#lco" data-catagory="Sangre de Cristo">
+                <h3>Lake Como</h3>
+                <span class = "save-me" data-href="#lco"><img src = "bookmark.png" width = 20px></span>
+                <div class="diff-rating" data-stars="5" data-color="dark">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+            </span>
+            
+        
+          </main>
+</body>
+</html>

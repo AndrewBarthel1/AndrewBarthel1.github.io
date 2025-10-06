@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Gravitas+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="comcss.css">
+    
+</head>
+<body>
+    <div class="header-container">
+    <nav class="main-nav">
+  <div class="nav-brand">2 Wheels at 14k</div>
+  <button class="nav-toggle" aria-label="Toggle navigation menu">
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+  </button>
+  <ul class="nav-menu hide">
+    <li class="list"><h2 class="menu">Menu</h2></li>
+    <li class="list"><a href="community_website_2.html">Home</a></li>
+    <li class="list"><a href="#resources">Resources</a></li>
+    <li class="list"><a href="events.html">Events</a></li>
+    <li class="list" id = "small-selected"><a href="my-data.html">My Data</a></li>
+  </ul>
+
+  <ul class="nav-menu">
+    <li><a href="community_website_2.html">Home</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li id = "selected"><a href="my-data.html">My Data</a></li>
+  </ul>
+      </nav>
+    </div>
+<h2 class="data-switch">How is My Data Used?</h2>
+<p class = "data-switch">We store bookmark information in order to allow for saved items to be filtered. Data can only be accessed
+  by the machine from which it was stored. If you would like to keep this data unstored, toggle the switch below to 'deny'. 
+  Data will not be stored, but unforunatly, bookmarks will become unusable. Thank you!
+</p>
+    <div class="data-switch">
+      <span class="accept chosen"><h3>Accept</h3></span>
+      <span class="deny"><h3>Deny</h3></span>
+    </div>
+
+    </body>
+
+    <script>
+  // Try to load from localStorage; default to true if not set
+  let storageSetting = localStorage.getItem('storageSetting');
+
+  // If it hasn't been set yet, default to 'true'
+  if (storageSetting === null) {
+    storageSetting = 'true';
+    localStorage.setItem('storageSetting', storageSetting);
+  }
+
+  let savedTrailheads = JSON.parse(localStorage.getItem('savedTrailheads')) || [];
+let savedTrailheadsUpdate = savedTrailheads;
+
+  const a = document.querySelector('.accept');
+  const d = document.querySelector('.deny');
+
+  // Highlight the correct setting on page load
+  if (storageSetting === 'true') {
+    a.classList.add('chosen');
+    d.classList.remove('chosen');
+  } else {
+    d.classList.add('chosen');
+    a.classList.remove('chosen');
+  }
+
+  a.addEventListener('click', function () {
+    a.classList.add('chosen');
+    d.classList.remove('chosen');
+    storageSetting = 'true';
+    localStorage.setItem('storageSetting', storageSetting);
+    console.log(storageSetting);
+  });
+
+  d.addEventListener('click', function () {
+    d.classList.add('chosen');
+    a.classList.remove('chosen');
+    storageSetting = 'false';
+    localStorage.removeItem('savedTrailheads');
+  localStorage.removeItem('savedTrailheadsUpdate');
+  savedTrailheads = [];
+savedTrailheadsUpdate = [];
+    localStorage.setItem('storageSetting', storageSetting);
+    console.log(storageSetting);
+    console.log(savedTrailheads);
+    console.log(savedTrailheadsUpdate);
+  });
+
+  const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const size = document.querySelector('.header-container')
+
+var menushow = false;
+
+
+
+function showMenu() {
+    var shown = navMenu.classList.toggle("show");
+    navMenu.classList.toggle("hide");
+
+    if(shown){
+        navToggle.setAttribute("aria-expanded", "true");
+        size.style.height = '10rem'
+    }
+
+    else {
+        navToggle.setAttribute("aria-expanded", "false");
+        size.style.height = '52px'
+    }
+
+}
+
+navToggle.addEventListener('click', showMenu);
+</script>
+
+    </html>
