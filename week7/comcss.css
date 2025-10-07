@@ -145,9 +145,10 @@
 
 }
 
-span{
+div{
     padding:0.8rem;
 }
+
 .trailhead-header{
     grid-row:span 1;
 }
