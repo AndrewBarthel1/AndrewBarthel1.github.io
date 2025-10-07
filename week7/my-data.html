@@ -42,17 +42,17 @@
   Data will not be stored, but unforunatly, bookmarks will become unusable. Thank you!
 </p>
     <div class="data-switch">
-      <span class="accept chosen"><h3>Accept</h3></span>
-      <span class="deny"><h3>Deny</h3></span>
+      <div class="accept chosen"><h1 class="h3">Accept</h1></div>
+      <div class="deny"><h1 class="h3">Deny</h1></div>
     </div>
 
-    </body>
+  
 
     <script>
-  // Try to load from localStorage; default to true if not set
+
   let storageSetting = localStorage.getItem('storageSetting');
 
-  // If it hasn't been set yet, default to 'true'
+
   if (storageSetting === null) {
     storageSetting = 'true';
     localStorage.setItem('storageSetting', storageSetting);
@@ -64,7 +64,7 @@ let savedTrailheadsUpdate = savedTrailheads;
   const a = document.querySelector('.accept');
   const d = document.querySelector('.deny');
 
-  // Highlight the correct setting on page load
+
   if (storageSetting === 'true') {
     a.classList.add('chosen');
     d.classList.remove('chosen');
@@ -121,5 +121,5 @@ function showMenu() {
 
 navToggle.addEventListener('click', showMenu);
 </script>
-
+</body>
     </html>
