@@ -42,6 +42,7 @@
     text-indent: 0.5rem;
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding:0.8rem;
 }
 
 .header-container{
@@ -128,6 +129,7 @@
     text-indent: 0.5rem;
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding:0.8rem;
 }
 
 .trailhead-containers:hover{
@@ -142,12 +144,10 @@
     margin:1rem;
     text-indent: 0.5rem;
     box-shadow: none;
-
-}
-
-div{
     padding:0.8rem;
+
 }
+
 
 .trailhead-header{
     grid-row:span 1;
@@ -199,10 +199,12 @@ background-color: green;
 
 .accept{
     cursor: pointer;
+    padding:0.8rem;
 }
 
 .deny{
 cursor: pointer;
+padding:0.8rem;
 }
 
 
