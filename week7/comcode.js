@@ -27,17 +27,6 @@ navToggle.addEventListener('click', showMenu);
 const trailLinks = document.querySelectorAll('.trailhead-containers');
 
 
-trailLinks.forEach(span => {
-  span.addEventListener('click', (event) => {
-    const url = event.currentTarget.dataset.href
-
-
-    if(url)
-    {
-        window.location.href = url;
-    }
-  });
-});
 
 
 
@@ -49,16 +38,52 @@ const grid = document.querySelector('.grid-system')
 const filterList = document.querySelector('.trailhead-filter-list')
 const changeFilter = document.querySelectorAll('.filter-item')
 const trailheads = document.querySelectorAll('.trailhead-containers')
+const trailheadsmini = document.querySelectorAll('.trailhead-containers-mini')
 const size = document.querySelector('.header-container')
 const bookmark = document.querySelectorAll('.save-me')
 const ratings = document.querySelectorAll('.diff-rating')
 const a = document.querySelector('.accept')
 const d = document.querySelector('.deny')
+let tracker = true
 let savedTrailheads = JSON.parse(localStorage.getItem('savedTrailheads')) || [];
 let savedTrailheadsUpdate = savedTrailheads;
 let storageSetting = localStorage.getItem('storageSetting') || true;
 
+trailLinks.forEach(span => {
+  span.addEventListener('click', (event) => {
+    const url = event.currentTarget.dataset.href
 
+
+    if(url && tracker)
+    {
+        window.location.href = url;
+    }
+  });
+});
+
+trailheadsmini.forEach(span => {
+  span.addEventListener('click', (event) => {
+    const url = event.currentTarget.dataset.href
+
+
+    if(url && tracker)
+    {
+        window.location.href = url;
+    }
+  });
+});
+
+bookmark.forEach(span => {
+  span.addEventListener('mouseover', (event) => {
+    tracker=false;
+  });
+});
+
+bookmark.forEach(span => {
+  span.addEventListener('mouseleave', (event) => {
+    tracker=true;
+  });
+});
 
 
 window.addEventListener('load', function() {

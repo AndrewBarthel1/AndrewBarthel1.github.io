@@ -15,7 +15,7 @@
 <body>
     <div class="header-container">
     <nav class="main-nav">
-  <div class="nav-brand">2 Wheels at 14k</div>
+  <div class="nav-brand">Grizzly Gulch</div>
   <button class="nav-toggle" aria-label="Toggle navigation menu">
     <span class="hamburger"></span>
     <span class="hamburger"></span>
@@ -23,14 +23,14 @@
   </button>
   <ul class="nav-menu hide">
     <li class="list"><h2 class="menu">Menu</h2></li>
-    <li class="list" id = "small-selected"><a href="community_website_2.html">Home</a></li>
+    <li class="list"><a href="community_website_2.html">Home</a></li>
     <li class="list"><a href="#resources">Resources</a></li>
     <li class="list"><a href="events.html">Events</a></li>
     <li class="list"><a href="my-data.html">My Data</a></li>
   </ul>
 
   <ul class="nav-menu">
-    <li id = "selected"><a href="community_website_2.html">Home</a></li>
+    <li><a href="community_website_2.html">Home</a></li>
     <li><a href="#resources">Resources</a></li>
     <li><a href="events.html">Events</a></li>
     <li><a href="my-data.html">My Data</a></li>
@@ -38,24 +38,50 @@
       </nav>
     </div>
 
-    <main class="grid-system">
-      <nav class = "trailhead-filter"> 
-        <h2 class="trailhead-filter-text">
-          Filter: None
-        </h2>
-        <ul class = "trailhead-filter-list hidden">
-          <li class = "filter-item">Front</li>
-          <li class = "filter-item">Sawatch</li>
-          <li class = "filter-item">Mosquito</li>
-          <li class = "filter-item">Sangre de Cristo</li>
-          <li class = "filter-item">San Juan</li>
-          <li class = "filter-item">Elks</li>
-          <li class = "filter-item">None</li>
-          <li class = "filter-item">Saved</li>
-        </ul>
-      </nav>
-        <h1 class="trialhead-header">Trailheads</h1>
-            <div class="trailhead-containers" data-href="fourth.html" data-catagory="Front">
+    <main class="grid-system-trails">
+        <div class = "trails-location-whole">
+     <h1 class="h3 trails-location">Location</h1>
+     <p>Range: Front</p>
+     <p>Elevation: 10,750 ft</p>
+     <p>Cordinates: <a href="https://www.google.com/maps/dir//39.662958,+-105.817198/@40.009728,-105.2770304,14z?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">39.662958, -105.817198</a></p>
+     <h1 class="h3 trails-difficulty">Road Difficulty</h1>
+     <div class="diff-rating" data-stars="4" data-color="red">
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                      <div class="rate-ball"></div>
+                  </div>
+    <p class="small-text">A rating of 4/5 means an unpaved road that is heavy in rocks. There may be steep inclines and ruts that make high clearance nessesary</p>
+    <p>Nessesary Clearance: 6.5 inches</p>
+    <h1 class="h3 trails-info">Other Info</h1>
+    <p>Parking: Pull-offs near river</p>
+    <p>Campsite Ground Hardness: Rocky and wet. Take time to make sure kickstand is stable as winds are high</p>
+    <p>Bathrooms: None</p>
+     </div>
+
+     <div class = "trails-description">
+     <h1 class="h3 trails-location">Description</h1>
+     <p>Grizzly Gulch is a harder trailhead to access, but grants access to Grey's and Torreys', abslute classics of fourteeners.
+        The road is narrow, giving a nice advantage to traveling with a lower profile. Despite this, the road is dusty and 
+        can easily cause skids, so it is recommended to use slim shifting to stay on the road. ABS should be turned off on this road, 
+        and caution should be emphasized due to the cliff to the left of the road.
+     </p>
+     </div>
+     <div class = "trails-images">
+     <h1 class="h3 trails-pictures">Images</h1>
+        <div class="image-container">
+            <img class="pictures" src="gg.webp" alt="Grizzly Gulch Road">
+            <img class="pictures" src="pa.jpg" alt="Grizzly Gulch Parking Area">
+            <img class="pictures" src="gt.jpg" alt="Greys and Torreys peaks'">
+        </div>
+     </div>
+           
+     <div class="trailhead-super">
+     <h1 class="trialhead-header-mini h3">Trailheads</h1>
+     <div class="trailhead-internal-mini">
+     
+            <div class="trailhead-containers-mini" data-href="fourth.html" data-catagory="Front">
                 <h1 class="h3">Fourth of July Trailhead</h1>
                 <div class = "save-me" data-href="fourth.html"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                   <div class="diff-rating" data-stars="2" data-color="green">
@@ -66,18 +92,7 @@
                       <div class="rate-ball"></div>
                   </div>
                 </div>
-            <div class="trailhead-containers" data-href="griz.html" data-catagory="Front">
-                <h1 class="h3">Grizzly Gultch</h1>
-                <div class = "save-me" data-href="griz.html"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
-                <div class="diff-rating" data-stars="4" data-color="red">
-                      <div class="rate-ball"></div>
-                      <div class="rate-ball"></div>
-                      <div class="rate-ball"></div>
-                      <div class="rate-ball"></div>
-                      <div class="rate-ball"></div>
-                  </div>
-                </div>
-            <div class="trailhead-containers" data-href="#hm" data-catagory="Sawatch">
+            <div class="trailhead-containers-mini" data-href="#hm" data-catagory="Sawatch">
                 <h1 class="h3">Half Moon</h1>
                 <div class = "save-me" data-href="#hm"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="1" data-color="blue">
@@ -88,7 +103,7 @@
                       <div class="rate-ball"></div>
                   </div>
                 </div>
-             <div class="trailhead-containers" data-href="#sms" data-catagory="Elks">
+             <div class="trailhead-containers-mini" data-href="#sms" data-catagory="Elks">
                 <h1 class="h3">Snowmass Creek</h1>
                 <div class = "save-me" data-href="#sms"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="1" data-color="blue">
@@ -99,7 +114,7 @@
                       <div class="rate-ball"></div>
                   </div>
                 </div>
-            <div class="trailhead-containers" data-href="#mrl" data-catagory="Elks">
+            <div class="trailhead-containers-mini" data-href="#mrl" data-catagory="Elks">
                 <h1 class="h3">Maroon Lake</h1>
                 <div class = "save-me" data-href="#mrl"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="1" data-color="blue">
@@ -110,7 +125,7 @@
                       <div class="rate-ball"></div>
                   </div>
             </div>
-            <div class="trailhead-containers" data-href="#ybb" data-catagory="San Juan">
+            <div class="trailhead-containers-mini" data-href="#ybb" data-catagory="San Juan">
                 <h1 class="h3">Yankee Boy Basin</h1>
                 <div class = "save-me" data-href="#ybb"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="2" data-color="green">
@@ -121,7 +136,7 @@
                       <div class="rate-ball"></div>
                   </div>
             </div>
-            <div class="trailhead-containers" data-href="#lco" data-catagory="Sangre de Cristo">
+            <div class="trailhead-containers-mini" data-href="#lco" data-catagory="Sangre de Cristo">
                 <h1 class="h3">Lake Como</h1>
                 <div class = "save-me" data-href="#lco"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="5" data-color="dark">
@@ -132,7 +147,9 @@
                       <div class="rate-ball"></div>
                   </div>
             </div>
-            
+            </div>
+
+            </div>
         
           </main>
 </body>

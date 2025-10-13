@@ -15,7 +15,7 @@
 <body>
     <div class="header-container">
     <nav class="main-nav">
-  <div class="nav-brand">2 Wheels at 14k</div>
+  <div class="nav-brand">Fourth of July</div>
   <button class="nav-toggle" aria-label="Toggle navigation menu">
     <span class="hamburger"></span>
     <span class="hamburger"></span>
@@ -23,14 +23,14 @@
   </button>
   <ul class="nav-menu hide">
     <li class="list"><h2 class="menu">Menu</h2></li>
-    <li class="list" id = "small-selected"><a href="community_website_2.html">Home</a></li>
+    <li class="list"><a href="community_website_2.html">Home</a></li>
     <li class="list"><a href="#resources">Resources</a></li>
     <li class="list"><a href="events.html">Events</a></li>
     <li class="list"><a href="my-data.html">My Data</a></li>
   </ul>
 
   <ul class="nav-menu">
-    <li id = "selected"><a href="community_website_2.html">Home</a></li>
+    <li><a href="community_website_2.html">Home</a></li>
     <li><a href="#resources">Resources</a></li>
     <li><a href="events.html">Events</a></li>
     <li><a href="my-data.html">My Data</a></li>
@@ -38,35 +38,52 @@
       </nav>
     </div>
 
-    <main class="grid-system">
-      <nav class = "trailhead-filter"> 
-        <h2 class="trailhead-filter-text">
-          Filter: None
-        </h2>
-        <ul class = "trailhead-filter-list hidden">
-          <li class = "filter-item">Front</li>
-          <li class = "filter-item">Sawatch</li>
-          <li class = "filter-item">Mosquito</li>
-          <li class = "filter-item">Sangre de Cristo</li>
-          <li class = "filter-item">San Juan</li>
-          <li class = "filter-item">Elks</li>
-          <li class = "filter-item">None</li>
-          <li class = "filter-item">Saved</li>
-        </ul>
-      </nav>
-        <h1 class="trialhead-header">Trailheads</h1>
-            <div class="trailhead-containers" data-href="fourth.html" data-catagory="Front">
-                <h1 class="h3">Fourth of July Trailhead</h1>
-                <div class = "save-me" data-href="fourth.html"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
-                  <div class="diff-rating" data-stars="2" data-color="green">
+    <main class="grid-system-trails">
+        <div class = "trails-location-whole">
+     <h1 class="h3 trails-location">Location</h1>
+     <p>Range: Front</p>
+     <p>Elevation: 10,100 ft</p>
+     <p>Cordinates: <a href="https://maps.google.com/">39°59'41"N 105°38'03"W</a></p>
+     <h1 class="h3 trails-difficulty">Road Difficulty</h1>
+     <div class="diff-rating" data-stars="2" data-color="green">
                       <div class="rate-ball"></div>
                       <div class="rate-ball"></div>
                       <div class="rate-ball"></div>
                       <div class="rate-ball"></div>
                       <div class="rate-ball"></div>
                   </div>
-                </div>
-            <div class="trailhead-containers" data-href="griz.html" data-catagory="Front">
+    <p class="small-text">A rating of 2/5 means an unpaved road that is primarily dirt, but features some unavoidable rocks.</p>
+    <p>Nessesary Clearance: 5 inches</p>
+    <h1 class="h3 trails-info">Other Info</h1>
+    <p>Parking: Room for 20 cars</p>
+    <p>Campsite Ground Hardness: Decent, but prone to wetness. Center stand recommended.</p>
+    <p>Bathrooms: 2 in parking lot</p>
+     </div>
+
+     <div class = "trails-description">
+     <h1 class="h3 trails-location">Description</h1>
+     <p>The Forth of July Trailhead is a classic for front range hiking and scrambling. About 2 hours west of Denver, the trailhead takes you 
+        to the Indian Peaks Wilderness Area and Medicine Bow Wilderness Area. Getting up the trailhead on a bike isn't too difficult with a standard ADV bike,
+        and a dirt bike would wipe the floor with this trail. 5 inches of clearance is reccomended, but with good path finding, is not needed so long as it is later in the summer.
+        Inclines are up to 25 degrees, but only for short sections. The trail is too thin for cars to pass super comfertably, but bikes can certainly get around, 
+        and paths are prevelent enough for most parts of the road to be ridable. South and North Arapahoe peaks are both class 2 during the summer, with a traverse
+        that gets up to class 4.
+     </p>
+     </div>
+     <div class = "trails-images">
+     <h1 class="h3 trails-pictures">Images</h1>
+        <div class="image-container">
+            <img class="pictures" src="fourth_image.webp" alt="Aspens over the Fourth of July Trailhead">
+            <img class="pictures" src="arapahoe.jpg" alt="North and South Arapahoe Peaks">
+            <img class="pictures" src="glacier.jpg" alt="Arapahoe Glacier">
+        </div>
+     </div>
+           
+     <div class="trailhead-super">
+     <h1 class="trialhead-header-mini h3">Trailheads</h1>
+     <div class="trailhead-internal-mini">
+     
+            <div class="trailhead-containers-mini" data-href="griz.html" data-catagory="Front">
                 <h1 class="h3">Grizzly Gultch</h1>
                 <div class = "save-me" data-href="griz.html"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="4" data-color="red">
@@ -77,7 +94,7 @@
                       <div class="rate-ball"></div>
                   </div>
                 </div>
-            <div class="trailhead-containers" data-href="#hm" data-catagory="Sawatch">
+            <div class="trailhead-containers-mini" data-href="#hm" data-catagory="Sawatch">
                 <h1 class="h3">Half Moon</h1>
                 <div class = "save-me" data-href="#hm"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="1" data-color="blue">
@@ -88,7 +105,7 @@
                       <div class="rate-ball"></div>
                   </div>
                 </div>
-             <div class="trailhead-containers" data-href="#sms" data-catagory="Elks">
+             <div class="trailhead-containers-mini" data-href="#sms" data-catagory="Elks">
                 <h1 class="h3">Snowmass Creek</h1>
                 <div class = "save-me" data-href="#sms"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="1" data-color="blue">
@@ -99,7 +116,7 @@
                       <div class="rate-ball"></div>
                   </div>
                 </div>
-            <div class="trailhead-containers" data-href="#mrl" data-catagory="Elks">
+            <div class="trailhead-containers-mini" data-href="#mrl" data-catagory="Elks">
                 <h1 class="h3">Maroon Lake</h1>
                 <div class = "save-me" data-href="#mrl"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="1" data-color="blue">
@@ -110,7 +127,7 @@
                       <div class="rate-ball"></div>
                   </div>
             </div>
-            <div class="trailhead-containers" data-href="#ybb" data-catagory="San Juan">
+            <div class="trailhead-containers-mini" data-href="#ybb" data-catagory="San Juan">
                 <h1 class="h3">Yankee Boy Basin</h1>
                 <div class = "save-me" data-href="#ybb"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="2" data-color="green">
@@ -121,7 +138,7 @@
                       <div class="rate-ball"></div>
                   </div>
             </div>
-            <div class="trailhead-containers" data-href="#lco" data-catagory="Sangre de Cristo">
+            <div class="trailhead-containers-mini" data-href="#lco" data-catagory="Sangre de Cristo">
                 <h1 class="h3">Lake Como</h1>
                 <div class = "save-me" data-href="#lco"><img src = "bookmark.png" width = "20" alt = "bookmark"></div>
                 <div class="diff-rating" data-stars="5" data-color="dark">
@@ -132,7 +149,9 @@
                       <div class="rate-ball"></div>
                   </div>
             </div>
-            
+            </div>
+
+            </div>
         
           </main>
 </body>
