@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA9</title>
+    <style>
+
+        .box{
+            margin-left:40rem;
+            margin-top:15rem;
+            width:10%;
+            height:5rem;
+            background-color:greenyellow;
+            border:blueviolet 5px solid;
+            border-radius:1rem;
+            text-align: center;
+            align-items: center;
+            color:crimson;
+            transition: width 1s
+        }
+
+        .box:hover{
+            width:20%;
+            cursor:pointer;
+            transition: width 1s
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">Hover Me!</div>
+
+
+    <script>
+
+const box = document.querySelector(".box")
+
+function showText(){
+    box.textContent = "Click Me!"
+    
+}
+
+box.addEventListener('mouseover', showText)
+
+function noText(){
+    box.textContent = "Hover Me!"
+    
+}
+
+box.addEventListener('mouseleave', noText)
+
+function rick(){
+
+
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+}
+box.addEventListener('click', rick)
+
+
+
+    </script>
+</body>
+</html>
