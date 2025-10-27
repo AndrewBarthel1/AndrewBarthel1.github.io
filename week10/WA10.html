@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA10</title>
+    <link rel="stylesheet" href="WA10.css">
+</head>
+<body>
+    <div class="app">
+        <header>Cat Image Generator</header>
+        <section class="controls" >
+          <button type="button" id="new-cat" class="button">
+            Give me a new cat please!
+          </button>
+          <button type="button" id="more-cat" class="button">
+            Add another cat!
+          </button>
+        </section>
+        <section class="pictures">
+        <img src="" alt="Cutest Cat Ever!" class="cat-img" width="300">
+        <img src="" alt="Cutest Cat Ever!" class="cat-img hidden" width="300">
+        <img src="" alt="Cutest Cat Ever!" class="cat-img hidden" width="300">
+        </section>
+      </div>
+      <p>
+        The extension I added to the API system is the ability to generate
+        multiple images at once. This allows the user to customize their cuteness
+        intake, making for the purrfect website. This required the use of the API's 
+        length feature, allowing it to give me an array of JSON objects to use.
+      </p>
+      <p>
+        I plan to use an API like this in my project to generate song recommendations.
+        These recommendations are parsed by my JS to include only relevent ones.
+        Once my algorithm finds the best songs, it displays them to the user. This will
+        require many properties to be analylized, and only the best to be retained.
+      </p>
+      <script src="WA10.js"></script>
+</body>
+</html>
