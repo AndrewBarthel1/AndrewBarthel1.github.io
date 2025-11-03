@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA11</title>
+    <link rel="stylesheet" href="WA11.css">
+</head>
+<body>
+
+<div class="container-header">
+
+<p class="header-item selected" id="co">Cordinate</p>
+<p class="header-item" id="ci">City</p>
+
+</div>
+
+<button class="privacy">Privacy Mode</button>
+<div class="container">
+
+<div class="cords-con">
+    <label class="input-box" for="lat">Latitude: </label>
+    <input id="lat" type="text" name="lat" placeholder="Enter Latitude">
+    <label class="input-box" for="long">Longitude: </label>
+    <input id="long" type="text" name="long" placeholder="Enter Longitude">
+
+    <button class="input-box" id="submit">Submit</button>
+</div>
+<div class="city-con hidden">
+    <label class="input-box" for="city">City: </label>
+    <input id="city" type="text" name="city" placeholder="Enter City">
+
+    <button class="input-box" id="submit2">Submit</button>
+</div>
+    <div class="container-grid-inside">
+
+        <h1 class="grid-item" id="location"></h1>
+        <h2 class="grid-item" id="temp">Temp (F): </h2>
+        <h2 class="grid-item" id="temp2">No Data</h2>
+        <h2 class="grid-item" id="time">Description: </h2>
+        <h2 class="grid-item" id="time2">No Data</h2>
+        <h2 class="grid-item" id="hum">Humidity: </h2>
+        <h2 class="grid-item" id="hum2">No Data</h2>
+        <h2 class="grid-item" id="cloud">Clouds %: </h2>
+        <h2 class="grid-item" id="cloud2">No Data</h2>
+        <h2 class="grid-item" id="win">Wind: </h2>
+        <h2 class="grid-item" id="win2">No Data</h2>
+    
+    </div>
+
+</div>
+
+    <script src="WA11.js"></script>
+</body>
+</html>
