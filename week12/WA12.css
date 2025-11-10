@@ -1,3 +1,46 @@
+main{
+    justify-self: center;
+    display:flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.ssr {
+  font-family: "Sirin Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.notch {
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ronorm {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.robold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.cords-con{
+justify-self: center;
+}
 .input-box{
     margin:1rem;
     padding: 0.2rem;
@@ -19,13 +62,18 @@
     background-color: rgb(105, 155, 155);
 }
 
+#title{
+    margin-right:10%;
+    color: whitesmoke;
+}
+
 .header-item{
 background-color: rgb(255, 255, 255);
-color:darkcyan;
+color:rgb(0, 0, 0);
 padding:0.5rem;
 border: 1px gray solid;
 border-radius: 0.5rem;
-margin-left: 30%;
+margin-right: 15%;
 margin-top:1%;
 margin-bottom: 1%;
 }

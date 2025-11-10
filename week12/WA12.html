@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="WA12.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sirin+Stencil&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container-header">
+    <h1 id="title" class="ssr">Andrew's Better Weather</h1>
+    <button class="header-item selected notch" id="co">Cordinate</button>
+    <button class="header-item notch" id="ci">City</button>
+
+    </div>
+
+    <button class="privacy notch">Privacy Mode</button>
+    <div class="container">
+</header>
+<main>
+<div class="cords-con">
+    <label class="input-box notch" for="lat">Latitude: </label>
+    <input id="lat" type="text" name="lat" placeholder="Enter Latitude">
+    <label class="input-box notch" for="long">Longitude: </label>
+    <input id="long" type="text" name="long" placeholder="Enter Longitude">
+
+    <button class="input-box notch" id="submit">Submit</button>
+</div>
+<div class="city-con hidden">
+    <label class="input-box notch" for="city">City: </label>
+    <input id="city" type="text" name="city" placeholder="Enter City">
+
+    <button class="input-box notch" id="submit2">Submit</button>
+</div>
+    <div class="container-grid-inside">
+
+        <h1 class="grid-item robold" id="location">No Data</h1>
+        <h2 class="grid-item robold" id="temp">Temp (F): </h2>
+        <h2 class="grid-item ronorm" id="temp2">No Data</h2>
+        <h2 class="grid-item robold" id="time">Description: </h2>
+        <h2 class="grid-item ronorm" id="time2">No Data</h2>
+        <h2 class="grid-item robold" id="hum">Humidity: </h2>
+        <h2 class="grid-item ronorm" id="hum2">No Data</h2>
+        <h2 class="grid-item robold" id="cloud">Clouds %: </h2>
+        <h2 class="grid-item ronorm" id="cloud2">No Data</h2>
+        <h2 class="grid-item robold" id="win">Wind: </h2>
+        <h2 class="grid-item ronorm" id="win2">No Data</h2>
+    
+    </div>
+
+</div>
+</main>
+    <script src="WA12.js"></script>
+</body>
+</html>
