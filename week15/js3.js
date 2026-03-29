@@ -2,22 +2,30 @@ const iselect = document.querySelectorAll('.iselect')
 const itext = document.querySelectorAll('.itext')
 const iimg = document.querySelectorAll('.img1')
 
-iselect.forEach(select => {
 
-const arsel = Array.from(iselect)
-select.addEventListener('click',function(){
-
-    if(itext[arsel.indexOf(select)].classList.contains('hide'))
-    {
-itext[arsel.indexOf(select)].classList.remove('hide')
-iimg[arsel.indexOf(select)].classList.remove('hide')
-    }
-    else{
-        itext[arsel.indexOf(select)].classList.add('hide')
-        iimg[arsel.indexOf(select)].classList.add('hide')
-    }
-
+window.addEventListener('load', () => {
+  itext.forEach(el => {
+    el.classList.add('hide');
+  });
 });
+
+window.addEventListener('load', () => {
+  iimg.forEach(el => {
+    el.classList.add('hide');
+  });
+});
+
+
+iselect.forEach((select, index) => {
+  select.addEventListener('click', () => {
+    const textEl = itext[index];
+    const imgEl = iimg[index];
+
+    textEl.classList.toggle('hide');
+    imgEl.classList.toggle('hide');
+
+
+  });
 });
 
 const displayMsg = document.getElementById('click-msgb');

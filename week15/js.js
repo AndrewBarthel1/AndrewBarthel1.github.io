@@ -5,11 +5,36 @@ document.querySelectorAll('.morph-btn').forEach(btn => {
 
     function show() {
         //short.classList.add("hidden");
-        long.classList.remove("hidden");
+        if(window.innerWidth < 768)
+        {
+            long.classList.remove("hidden");
+            document.querySelectorAll('.morph-btn').forEach(btn => {
+                if(btn.matches(':hover'))
+                {
+                long.classList.remove("hidden");
+                btn.classList.add('addWidth');
+                }
+                else{
+                btn.classList.add('hidden');
+                
+                }
+
+            })
+
+        }
     }
 
     function hide() {
         long.classList.add("hidden");
+        if(window.innerWidth < 768)
+        {
+            document.querySelectorAll('.morph-btn').forEach(btn => {
+                btn.classList.remove('hidden')
+                btn.classList.remove('addWidth');
+
+            })
+
+        }
     }
 
     btn.addEventListener('mouseover', show);
@@ -28,7 +53,7 @@ document.addEventListener('click', function(event) {
         displayMsg.style.opacity = '1';
         setTimeout(() => {
             displayMsg.style.opacity = '0';
-        }, 3000); 
+        }, 5000); 
     } else {
         displayMsg.style.opacity = '0';
     }
